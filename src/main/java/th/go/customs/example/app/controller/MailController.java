@@ -1,6 +1,7 @@
 package th.go.customs.example.app.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,6 +16,7 @@ import th.go.customs.example.framework.bean.ResponseData;
 
 @RestController
 @RequestMapping("api/authen")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class MailController {
 	
 	@Autowired
